@@ -1,4 +1,4 @@
-from .models import Ingredient, Recipe, RecipeIngredient
+from .models import Recipe
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 
