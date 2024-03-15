@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}Recipe Book{% endblock %}
+{% block display %}Recipe List{% endblock %}
 {% block content %}
     <ul>
         {% for recipe in object_list %}
