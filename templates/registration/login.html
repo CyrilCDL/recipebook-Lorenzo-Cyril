@@ -1,9 +1,11 @@
 <html>
+    <h1>Log In To Your Account</h1>
     <body>
         <form method="POST" action="{% url 'login' %}">
             {% csrf_token %}
             {{ form.as_p }}
             <button type="submit">Log in</button>
+            <a href="{% url 'password_reset' %}">Forgot password?</a>
         </form>
     </body>
 </html>
